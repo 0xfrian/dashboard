@@ -1,0 +1,13 @@
+# Ignore sensitive info (environmental variables)
+.env 
+auth/
+
+# Ignore Node modules folder 
+node_modules/
+
+# Ignore statements folder
+statements/
+
+# Ignore local test files 
+practice.js
+

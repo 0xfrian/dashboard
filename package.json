@@ -1,0 +1,29 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts/index.js",
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "googleapis": "^109.0.1",
+    "nodemon": "^2.0.20",
+    "treeify": "^1.1.0"
+  },
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xfrian/dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0xfrian/dashboard/issues"
+  },
+  "homepage": "https://github.com/0xfrian/dashboard#readme"
+}

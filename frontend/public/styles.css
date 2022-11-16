@@ -1,0 +1,239 @@
+/* ====== Root ====== */
+:root {
+    --pink_light: #E1C4BF;
+    --pink: #E3B0AF;
+    --pink_dark: #A78480;
+    --white: #DED7CF;
+    --silver: #C0C0C0;
+    --black: #27282D;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    padding: 0px;
+    font-size: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    background-color: var(--pink_dark);
+    scroll-behavior: smooth;
+}
+
+.root-container {
+    display: flex; 
+    flex-direction: column; 
+    gap: 45px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 720px;
+    box-sizing: border-box;
+}
+
+
+/* ====== Complementary Classes ====== */
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.pointer { cursor: pointer }
+
+.pink {
+    background-color: var(--pink);
+    box-shadow: 0px 0px 0px 3px var(--pink);
+}
+
+.silver {
+    background-color: var(--silver);
+    box-shadow: 0px 0px 0px 3px var(--silver);
+}
+
+.shadow { box-shadow: 7px 7px 3px 2px rgba(0, 0, 0, 0.5) }
+
+.no-shadow { box-shadow: none }
+
+.border { border: 5px double white }
+
+.section-heading {
+    display: block;
+    margin: 0px auto 20px 0px;
+    padding: 0px;
+    text-align: start;
+    font-size: 1.3rem;
+    font-weight: normal;
+    border-radius: 30px;
+}
+
+
+/* ====== Logo ====== */
+.logo-container {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo-img {
+    position: relative;
+    bottom: 5px;
+    width: 75px;
+    height: 75px;
+}
+
+.logo-text {
+    margin: 0px;
+    padding: 50px 0px;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: var(--black);
+}
+
+
+/* ====== Data ====== */
+.data-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.data-header {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: start;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.file-button-container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-upload-button {
+    display: block;
+    margin: 0px 0px 20px;
+    padding: 5px 10px;
+    border-radius: 0px;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+}
+
+.file-close-button {
+    display: block;
+    margin: 0px;
+    padding: 2px 5px;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+
+.file-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.file {
+    margin: 10px 15px;
+    padding: 5px 10px;
+    text-align: start;
+    background-color: var(--pink_light);
+    box-sizing: border-box;
+}
+
+
+/* ====== Table ====== */
+.table-container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+.table {
+    display: block;
+    width: 100%;
+    max-height: 400px;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+.table-body {
+    display: block;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.table-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+tr:first-child {
+    position: sticky;
+    top: 0px;
+    padding-bottom: 5px;
+    text-align: left;
+    text-decoration: underline;
+    background-color: var(--silver);
+}
+
+.date, .amount { flex: 1 }
+
+.merchant { flex: 2 }
+
+.amount { 
+    margin-right: 20px;
+    text-align: right;
+}
+
+.hidden { display: none }
+
+
+
+/* ====== Graph ====== */
+.graph-container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+canvas {
+    margin-top: -40px;
+}
+
