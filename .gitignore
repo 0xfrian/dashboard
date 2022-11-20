@@ -10,4 +10,5 @@ statements/
 
 # Ignore local test files 
 practice.js
+practice.ts
 
