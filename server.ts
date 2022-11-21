@@ -1,11 +1,9 @@
-// === Node Packages ===
-const cors = require("cors");
-const express = require("express");
-
-// === Local JS modules ===
-const parser = require("./utils/parse.js");
-const gsheets = require("./utils/gsheets.js"); // Google Sheets API
-const { log, done, alert, error } = require("./utils/log.js"); // For pretty logging
+// === Dependencies ===
+require('dotenv').config();
+import cors from "cors";
+import express from "express";
+import { readSheet, GoogleSheet } from "./utils/GDrive";
+import Logger from "./src/utils/Logger";
 
 // === Express Server ===
 const app = express(); // Initialize Express application

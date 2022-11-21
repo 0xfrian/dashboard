@@ -1,3 +1,4 @@
+// === Dependencies ===
 import Transaction from "./Transaction";
 
 export default class Statement {
@@ -39,7 +40,7 @@ export default class Statement {
   }
 
   // Console-logs statement to terminal
-  print() {
+  print(): void {
     console.log(`    ==== ${this.account} ========================================================== `);
     for (let i = 0; i < this.transactions.length; i++) {
       const transaction: Transaction = this.transactions[i];

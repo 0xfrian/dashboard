@@ -1,3 +1,4 @@
+// === Dependencies ===
 export default class Transaction {
   date: string;
   merchant: string; 

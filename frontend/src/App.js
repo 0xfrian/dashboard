@@ -1,37 +1,42 @@
-// === Node Packages === 
-import { useState } from "react";
+import React from 'react';
+import {
+  ChakraProvider,
+  Box,
+  Text,
+  Link,
+  VStack,
+  Code,
+  Grid,
+  theme,
+} from '@chakra-ui/react';
+import { ColorModeSwitcher } from './ColorModeSwitcher';
+import { Logo } from './Logo';
 
-// === Components ===
-import Data from "./Data.js";
-import Table from "./Table.js";
-import Graph from "./Graph.js";
-
-// === App Component ===
 function App() {
-    // Define state variables
-    const [statements, setStatements] = useState([]); 
-    const [rows, setRows] = useState([]);
-
-    return (
-        <>
-            {/* Logo */}
-            <div className="logo-container pink shadow border no-select">
-                <img className="logo-img" src="./alpaca.png" alt="alpaca-icon" draggable="false" />
-                <h1 className="logo-text">
-                    alpaca.fi
-                </h1>
-            </div>
-
-            {/* Statements */}
-            <Data setRows={setRows} statements={statements} setStatements={setStatements} />
-
-            {/* Table */}
-            <Table statements={statements} rows={rows} setRows={setRows} />
-
-            {/* Graph */}
-            <Graph />
-        </>
-    );
+  return (
+    <ChakraProvider theme={theme}>
+      <Box textAlign="center" fontSize="xl">
+        <Grid minH="100vh" p={3}>
+          <ColorModeSwitcher justifySelf="flex-end" />
+          <VStack spacing={8}>
+            <Logo h="40vmin" pointerEvents="none" />
+            <Text>
+              Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
+            </Text>
+            <Link
+              color="teal.500"
+              href="https://chakra-ui.com"
+              fontSize="2xl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn Chakra
+            </Link>
+          </VStack>
+        </Grid>
+      </Box>
+    </ChakraProvider>
+  );
 }
 
 export default App;
